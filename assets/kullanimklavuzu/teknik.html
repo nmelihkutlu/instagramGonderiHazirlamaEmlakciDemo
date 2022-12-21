@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - InstaGönderi</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="container">
+        <div class="py-5 text-center">
+            <img width="100" class="d-block mx-auto mb-4" src="../images/logo.png" alt="logo">
+            <h2>Demo InstaGonderi - Emlakçı</h2>
+            <p class="lead">Instagram için gönderi resmi hazırlama scripti</p>
+            <h1>Teknik Bilgiler</h1>
+        </div>
+    </header>
+    <hr>
+
+    <!-- Kullanılan Dil ve yöntemler: -->
+    <section class="container">
+        <div class="row align-items-start">
+            <h3>Kullanılan Dil ve yöntemler:</h3>
+            <p><strong>HTML + CSS:</strong> İskelet oluşturuldu.</p>
+            <p><strong>Bootstrap:</strong> Görünüm daha güzel hale getirildi.</p>
+            <p><strong>JavaScript: </strong> İstemci tarafındaki kodlamalar yapıldı. Örneğin: Sayfa yüklenince il
+                sorgulaması yapılması istemi veya canvas ile resmin oluşturulması gibi. </p>
+            <p><strong>JQuery: </strong> Bazı kodların daha kolay yazılması için kullanıldı. Örneğin ajax işlemleri.</p>
+            <p><strong>Ajax: </strong> Sayfa yenilenmeden bilgilerin gelmesi için kullanıldı.</p>
+            <p><strong>PHP: </strong> Server tabanlı kodlamalar yapıldı. Örneğin: sahibinden sorgulaması, picsum resim linkinin alınması gibi.</p>
+            <p><strong>Curl: </strong> Başka internet sayfalarından bilgi almak için http istemci olarak kullanıldı.</p>
+            <p><strong>HTML Canvas: </strong> Sayfa içinde resim oluşturmak / çizim yapmak için kullanıldı.</p>
+        </div>
+    </section>
+
+    <br>
+    <hr>
+
+    <!-- GitHub Linki -->
+    <section class="container">
+        <div class="row align-items-start">
+            <div class="col">
+                <h3>GitHub Linki:</h3>
+                <p>Bu scriptin dosyalarına github üzerinden ulaşabilirsiniz.</p>
+                <strong><a
+                        href="https://github.com/nmelihkutlu/instagramGonderiHazirlamaEmlakciDemo">https://github.com/nmelihkutlu/instagramGonderiHazirlamaEmlakciDemo</a></strong>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <hr>
+
+    <!-- Yöntemler -->
+    <section class="container">
+        <div class="row align-items-start">
+            <div class="col">
+                <h3>Yöntemler:</h3>
+                <p><strong>Sahibinden.com Sorgulama:</strong> Curl ile yapıldı. Cookie ve ilgili ayarlar yapılarak bot tespit sistemi atlandı. Tek sorgulama olduğu için proxy ve diğer şeylere gerek duyulmadı.</p>
+                <p><strong>Sahibinden.com Link/No?:</strong> Girilen bilgi, PHP "is_numeric()" komutu ile kontrol edilerek no/link olduğu tespit edildi ve ilgili sayfadan sorgulama yapıldı.</p>
+                <p><strong>Sahibinden.com Bilgileri:</strong> Gelen sayfa incelendiğinde tüm bilgilerin json olarak mevcut olduğu görüldü, tek tek almak yerine json bilgisi alındı.</p>
+                <p><strong>ParselSorgu Sorgulama:</strong> Önce il sorgulandı. İl bilgisi gelmeden olmadan ilçe bilgisi gelmediği için il-ilçe-mahalle bilgileri sıra ile alındı.</p>
+                <p><strong>ParselSorgu Sorgulama:</strong> Önce il sorgulandı. İl bilgisi gelmeden olmadan ilçe bilgisi gelmediği için il-ilçe-mahalle bilgileri sıra ile alındı.</p>
+                <p><strong>Bilglerin Kaydedilmesi:</strong> Local Storage kullanıldı. Her kullanıcının kendi bilgisayına kayıt yapıldı.</p>
+                <p><strong>Değişiklik Olduğunda Kayıt:</strong> Başka bir tuşa basmaya gerek kalmadan, değişiklik olduğu an kayıt olması için "$(document).on('change', '#fileResim', function ()" gibi komutlar kullanıldı.</p>
+                <p><strong>Rastgele Resimler:</strong> Görsel olarak güzelleştirmek için picsum sitesinden rastgele resimler alındı.</p>
+                <p><strong>Picsum Linki? : </strong> picsum sitesi her seferinde farklı resim veriyor, resim PHP curl komutu ile alınarak sabit linki kaydedildi ve gösterildi.</p>
+                <p><strong>Canvas: </strong> HTML olarak resim oluşturma gibi işlemler için kullanıldı. Püf noktası: her işlem yapılmadan önce canvasın temizlenmesi gerekiyor.</p>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <hr>
+
+    <!-- Geliştirme -->
+    <section class="container">
+        <div class="row align-items-start">
+            <div class="col">
+                <h3>Geliştirme:</h3>
+                <p>Script ile ilgili her türlü geliştirme / düzenleme / yeniden oluşturma isteklerinizi bildirebilirsiniz.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="container pt-5 mt-5">
+        <div class="py-5 mt-5 text-muted text-center text-small">
+            <img src="../images/nmelihkutlu.jpg" alt="nmelihkutlu" style="border-radius: 50%;" width="100">
+            <p>
+                nmelihkutlu tarafından hazırlanmıştır<br>
+                <a
+                    href="https://www.r10.net/profil/169602-nmelihkutlu.html">https://www.r10.net/profil/169602-nmelihkutlu.html</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
